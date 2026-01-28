@@ -1,1 +1,86 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Enlaces */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Botones */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  background-color: #ffcb05; /* amarillo Pokémon */
+  color: #2a75bb; /* azul Pokémon */
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #f5b700;
+}
+
+/* Inputs */
+input, textarea {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #2a75bb;
+  box-shadow: 0 0 0 2px rgba(42, 117, 187, 0.2);
+}
+
+/* Contenedor general */
+main {
+  padding: 20px;
+}
+
+/* Encabezados */
+h1, h2, h3 {
+  margin-bottom: 12px;
+}
+
+/* Mensajes de éxito / error */
+.success {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.error {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* Flex helpers */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gap-8 {
+  gap: 8px;
+}
 
